@@ -47,6 +47,8 @@ if type rg &> /dev/null; then
   export FZF_DEFAULT_OPTS='-m --height 50% --border'
 fi
 
-source <(glgroup bashcomplete)
+if which glgroup > /dev/null; then
+  source <(glgroup bashcomplete)
+fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
