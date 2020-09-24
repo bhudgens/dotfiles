@@ -50,6 +50,9 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " (markdown preview) Multiline select
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
+" (tidymarkdown) A beautifier for markdown
+Plug 'groovytron/vim-tidymarkdown'
+
 call plug#end()
 
 " nmap <leader> <Plug>MarkdownPreview
@@ -68,7 +71,9 @@ nnoremap <silent> <leader>b :Buffers<CR>
 " Remap for rename current word
 nmap <F2> <Plug>(coc-rename)
 
-map <Esc>I :FormatJs<CR>
+" map <Esc>I :FormatJs<CR>
+autocmd FileType javascript,json map <Esc>I :FormatJs<CR>
+autocmd FileType markdown map <Esc>I :TidyMd<CR>
 
 " Check if NERDTree is open or active
 function! IsNERDTreeOpen()
