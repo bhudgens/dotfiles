@@ -27,6 +27,9 @@ npm config set save-prefix ''
 
 source ${HOME}/.benvironment
 
+export DEFAULT_USER=$USER
+prompt_context(){}
+
 # Which keys you want to load when you run 'keyme'
 # Syntax:
 #  $last_pass_id<space>$friendly_name_on_your_disk
