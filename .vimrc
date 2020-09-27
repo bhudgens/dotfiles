@@ -55,6 +55,14 @@ Plug 'groovytron/vim-tidymarkdown'
 
 call plug#end()
 
+let g:mkdp_open_to_the_world = 1
+let g:mkdp_port = 8080
+function! g:EchoUrl(url)
+    :echo a:url
+endfunction
+let g:mkdp_browserfunc = 'g:EchoUrl'
+
+
 " nmap <leader> <Plug>MarkdownPreview
 " nmap <leader> <Plug>MarkdownPreviewStop
 nmap <Leader>m <Plug>MarkdownPreviewToggle
