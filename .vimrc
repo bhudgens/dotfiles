@@ -48,7 +48,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 " (markdown preview) Multiline select
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
 
 " (tidymarkdown) A beautifier for markdown
 Plug 'groovytron/vim-tidymarkdown'
