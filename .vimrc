@@ -34,6 +34,9 @@ Plug 'airblade/vim-gitgutter'
 " onedark
 Plug 'joshdick/onedark.vim'
 
+" Coffeescript?
+Plug 'kchmck/vim-coffee-script'
+
 " (NerdCommenter) Smart Comments
 Plug 'scrooloose/nerdcommenter'
 
