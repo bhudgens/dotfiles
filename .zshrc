@@ -31,6 +31,15 @@ npm config set save-prefix ''
 
 source ${HOME}/.benvironment
 
+export DEFAULT_USER=bhudgens
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    # Original - but we just want the host
+    # prompt_segment black default "%(!.%{%F{yellow}%}.)%n@%m"
+    prompt_segment black default "%(!.%{%F{yellow}%}.)%m"
+  fi
+}
+
 # Which keys you want to load when you run 'keyme'
 # Syntax:
 #  $last_pass_id<space>$friendly_name_on_your_disk
