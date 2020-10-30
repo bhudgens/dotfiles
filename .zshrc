@@ -18,6 +18,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+setopt share_history
+HISTSIZE=10000000000
+SAVEHIST=10000000000
+
 autoload compinit
 compinit
 autoload bashcompinit
