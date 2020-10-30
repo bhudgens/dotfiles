@@ -222,4 +222,4 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 
-autocmd FileType c,lua,cpp,java,php autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType c,lua,cpp,java,php,sh autocmd BufWritePre <buffer> %s/\s\+$//e
