@@ -34,6 +34,9 @@ Plug 'airblade/vim-gitgutter'
 " onedark
 Plug 'joshdick/onedark.vim'
 
+" Coffeescript?
+Plug 'kchmck/vim-coffee-script'
+
 " (NerdCommenter) Smart Comments
 Plug 'scrooloose/nerdcommenter'
 
@@ -54,6 +57,14 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
 Plug 'groovytron/vim-tidymarkdown'
 
 call plug#end()
+
+let g:mkdp_open_to_the_world = 1
+let g:mkdp_port = 8080
+function! g:EchoUrl(url)
+    :echo a:url
+endfunction
+let g:mkdp_browserfunc = 'g:EchoUrl'
+
 
 " nmap <leader> <Plug>MarkdownPreview
 " nmap <leader> <Plug>MarkdownPreviewStop
@@ -195,10 +206,6 @@ let g:coc_global_extensions = [
   \ 'coc-json', 
   \ ]
 
-let g:onedark_color_overrides = {
-\ "black": {"gui": "#000000", "cterm": "000", "cterm16": "0" },
-\ "purple": { "gui": "#C678DF", "cterm": "170", "cterm16": "5" }
-\}
 
 if &term =~ '^screen'
     " tmux will send xterm-style keys when its xterm-keys option is on
@@ -207,6 +214,15 @@ if &term =~ '^screen'
     execute "set <xRight>=\e[1;*C"
     execute "set <xLeft>=\e[1;*D"
 endif
+
+if (has("termguicolors"))
+  set termguicolors
+endif
+
+let g:onedark_color_overrides = {
+\ "black": {"gui": "#000000", "cterm": "000", "cterm16": "0" },
+\ "purple": { "gui": "#C678DF", "cterm": "170", "cterm16": "5" }
+\}
 
 colorscheme onedark
 
@@ -219,4 +235,6 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 
-autocmd FileType c,lua,cpp,java,php autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType c,lua,cpp,java,php,sh autocmd BufWritePre <buffer> %s/\s\+$//e
+
+
