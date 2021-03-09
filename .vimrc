@@ -215,7 +215,20 @@ if &term =~ '^screen'
     execute "set <xLeft>=\e[1;*D"
 endif
 
-if (has("termguicolors"))
+if &term =~ '^tmux'
+    " tmux will send xterm-style keys when its xterm-keys option is on
+    execute "set <xUp>=\e[1;*A"
+    execute "set <xDown>=\e[1;*B"
+    execute "set <xRight>=\e[1;*C"
+    execute "set <xLeft>=\e[1;*D"
+endif
+
+
+
+if (has("termguicolors") && &term !~ '^tmux')
+  " This is only necessary if you use "set termguicolors".
+  " let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  " let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
 
