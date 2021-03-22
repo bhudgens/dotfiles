@@ -65,7 +65,6 @@ function! g:EchoUrl(url)
 endfunction
 let g:mkdp_browserfunc = 'g:EchoUrl'
 
-
 " nmap <leader> <Plug>MarkdownPreview
 " nmap <leader> <Plug>MarkdownPreviewStop
 nmap <Leader>m <Plug>MarkdownPreviewToggle
