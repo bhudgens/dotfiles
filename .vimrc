@@ -174,6 +174,9 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+nnoremap <Leader>ce :CocEnable<CR>
+nnoremap <Leader>cd :CocDisable<CR>
+
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:NERDTreeGitStatusWithFlags = 1
 let g:NERDTreeGitStatusUseNerdFonts = 1
