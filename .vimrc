@@ -252,4 +252,5 @@ set tabstop=2
 
 autocmd FileType c,lua,cpp,java,php,sh autocmd BufWritePre <buffer> %s/\s\+$//e
 
+xnoremap <leader>m :w ! bash -c cat<CR>
 

@@ -32,7 +32,7 @@ npm config set save-prefix ''
 
 source ${HOME}/.benvironment
 
-export DEFAULT_USER=bhudgens
+export DEFAULT_USER=benjamin
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
     # Original - but we just want the host
