@@ -225,7 +225,7 @@ if &term =~ '^tmux'
     execute "set <xLeft>=\e[1;*D"
 endif
 
-
+set mouse+=a
 
 if (has("termguicolors") && &term !~ '^tmux')
   " This is only necessary if you use "set termguicolors".
