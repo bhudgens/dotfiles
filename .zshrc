@@ -53,7 +53,7 @@ export KEYME_KEYS_TO_LOAD="
 1175375113105532471 devship
 3763671591991597949 gds
 "
-export LASTPASS_USER="bhudgens@glgroup.com"
+export LASTPASS_USER="benjamin@benjamindavid.com"
 
 if type rg &> /dev/null; then
   export FZF_DEFAULT_COMMAND='rg --files --hidden'
@@ -67,3 +67,5 @@ fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export LPASS_DISABLE_PINENTRY=1
+
+alias luamake=/tmp/lua-language-server/3rd/luamake/luamake
