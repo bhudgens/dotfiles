@@ -47,11 +47,7 @@ prompt_context() {
 # Example:
 #  23423423423432423 my_key
 export KEYME_KEYS_TO_LOAD="
-4318807893850238648 glguser
-5866756601936395183 githubdevopsuser
 5251408404796459452 id_rsa
-1175375113105532471 devship
-3763671591991597949 gds
 "
 export LASTPASS_USER="benjamin@benjamindavid.com"
 
