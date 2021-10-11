@@ -47,7 +47,7 @@ prompt_context() {
 # Example:
 #  23423423423432423 my_key
 export KEYME_KEYS_TO_LOAD="
-5251408404796459452 id_rsa
+6828649b-46b1-4a84-88d9-adbe00ca8ce1 id_rsa
 "
 export LASTPASS_USER="benjamin@benjamindavid.com"
 
