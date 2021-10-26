@@ -22,6 +22,12 @@ Plug 'tpope/vim-unimpaired'
 " (surround) Change surrounding chars (changeme) to 'changeme'
 Plug 'tpope/vim-surround'
 
+" Git Integration
+Plug 'tpope/vim-fugitive'
+
+" Ruby on Rails
+Plug 'tpope/vim-rails'
+
 Plug 'bhudgens/vim-format-js'
 
 " (fzf) Search
@@ -77,6 +83,9 @@ nnoremap <silent> <C-f> :Rg<CR>
 nnoremap <silent> <C-p> :Files<CR>
 nnoremap <silent> <leader>g :Commits<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
+
+" Git Blame
+nnoremap <leader>gb :Git blame<CR>
 
 " Remap for rename current word
 nmap <F2> <Plug>(coc-rename)
@@ -203,6 +212,7 @@ let g:coc_global_extensions = [
   \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-eslint', 
+  \ 'coc-solargraph', 
   \ 'coc-yaml', 
   \ 'coc-lua', 
   \ 'coc-json', 
