@@ -49,6 +49,7 @@ prompt_context() {
 export KEYME_KEYS_TO_LOAD="
 6828649b-46b1-4a84-88d9-adbe00ca8ce1 id_rsa
 73f96363-72a5-4ceb-ad27-adbf00c0eaa5 claims_central
+c9ca1233-2ce0-4a4f-aa07-add700d87e97 claims_central_staging
 "
 export LASTPASS_USER="benjamin@benjamindavid.com"
 
