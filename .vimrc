@@ -49,14 +49,13 @@ Plug 'scrooloose/nerdcommenter'
 " (quick-scope) Jumpy light
 Plug 'unblevable/quick-scope' 
 
-
 " (lighline) Smarter status bar
 Plug 'itchyny/lightline.vim'
 
 " (vim-visual-multi) Multiline select
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
-" (markdown preview) Multiline select
+" (markdown preview) Markdown web view
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
 
 " (tidymarkdown) A beautifier for markdown
