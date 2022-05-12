@@ -94,6 +94,7 @@ nmap <F2> <Plug>(coc-rename)
 " map <Esc>I :FormatJs<CR>
 autocmd FileType javascript,json map <Esc>I :FormatJs<CR>
 autocmd FileType markdown map <Esc>I :TidyMd<CR>
+autocmd FileType tf map <Esc>I :!terraform fmt<CR>
 
 " Check if NERDTree is open or active
 function! IsNERDTreeOpen()
