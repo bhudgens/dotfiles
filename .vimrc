@@ -256,6 +256,7 @@ if (has("termguicolors") && &term !~ '^tmux')
 endif
 
 let g:onedark_color_overrides = {
+\ "background": {"gui": "#000000", "cterm": "000", "cterm16": "0" },
 \ "black": {"gui": "#000000", "cterm": "000", "cterm16": "0" },
 \ "purple": { "gui": "#C678DF", "cterm": "170", "cterm16": "5" }
 \}
