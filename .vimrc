@@ -78,6 +78,8 @@ nmap <Leader>m <Plug>MarkdownPreviewToggle
 command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
 
 " FZF Searches
+" Alt-Shift-f will search selected word
+nnoremap <silent> <Esc>F :Rg <C-r><C-w><CR>
 nnoremap <silent> <C-f> :Rg<CR>
 nnoremap <silent> <C-p> :Files<CR>
 nnoremap <silent> <leader>g :Commits<CR>
