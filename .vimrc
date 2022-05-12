@@ -272,7 +272,7 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 
-autocmd FileType c,lua,cpp,java,php,sh autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType c,lua,cpp,java,php,sh,typescript autocmd BufWritePre <buffer> %s/\s\+$//e
 autocmd FileType markdown set spell
 
 xnoremap <leader>m :w ! bash -c cat<CR>
