@@ -64,6 +64,9 @@ Plug 'groovytron/vim-tidymarkdown'
 " (vim-autoformat) Beautifier for HTML
 Plug 'vim-autoformat/vim-autoformat'
 
+" (vim-autoformat) Beautifier for HTML
+Plug 'MaxMEllon/vim-jsx-pretty'
+
 call plug#end()
 
 let g:mkdp_open_to_the_world = 1
