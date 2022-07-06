@@ -61,6 +61,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
 " (tidymarkdown) A beautifier for markdown
 Plug 'groovytron/vim-tidymarkdown'
 
+" (vim-autoformat) Beautifier for HTML
+Plug 'vim-autoformat/vim-autoformat'
+
 call plug#end()
 
 let g:mkdp_open_to_the_world = 1
@@ -92,6 +95,7 @@ nnoremap <leader>gb :Git blame<CR>
 nmap <F2> <Plug>(coc-rename)
 
 " map <Esc>I :FormatJs<CR>
+autocmd FileType html map <Esc>I :Autoformat<CR>
 autocmd FileType javascript,json map <Esc>I :FormatJs<CR>
 autocmd FileType markdown map <Esc>I :TidyMd<CR>
 autocmd FileType tf map <Esc>I :!terraform fmt<CR>
