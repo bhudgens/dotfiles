@@ -61,11 +61,18 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
 " (tidymarkdown) A beautifier for markdown
 Plug 'groovytron/vim-tidymarkdown'
 
+" (Plug sheerun/vim-polyglot) Syntax highlighting for $everything
+Plug 'sheerun/vim-polyglot'
+
 " (vim-autoformat) Beautifier for HTML
 Plug 'vim-autoformat/vim-autoformat'
 
-" (vim-autoformat) Beautifier for HTML
-Plug 'MaxMEllon/vim-jsx-pretty'
+" (vim-prettier) format things nicely
+Plug 'prettier/vim-prettier', { 'do': 'npm install --production' }
+
+" (vim-react-snippets) Snippets for react: https://github.com/mlaursen/vim-react-snippets#function-components-javascript
+Plug 'SirVer/ultisnips'
+Plug 'mlaursen/vim-react-snippets'
 
 call plug#end()
 
@@ -98,10 +105,12 @@ nnoremap <leader>gb :Git blame<CR>
 nmap <F2> <Plug>(coc-rename)
 
 " map <Esc>I :FormatJs<CR>
+autocmd FileType css map <Esc>I :Prettier<CR>
+autocmd FileType javascriptreact map <Esc>I :Prettier<CR>
 autocmd FileType html map <Esc>I :Autoformat<CR>
-autocmd FileType javascript,json map <Esc>I :FormatJs<CR>
+autocmd FileType javascript,json map <Esc>I :Prettier<CR>
 autocmd FileType markdown map <Esc>I :TidyMd<CR>
-autocmd FileType tf map <Esc>I :!terraform fmt<CR>
+autocmd FileType terraform map <Esc>I :!terraform fmt<CR>
 
 " Check if NERDTree is open or active
 function! IsNERDTreeOpen()
@@ -233,6 +242,7 @@ let g:coc_global_extensions = [
   \ 'coc-solargraph', 
   \ 'coc-yaml', 
   \ 'coc-lua', 
+  \ 'coc-css', 
   \ 'coc-json', 
   \ ]
 
@@ -255,8 +265,8 @@ endif
 
 set mouse+=a
 
-if (has("termguicolors") && &term !~ '^tmux')
-  " " This is only necessary if you use "set termguicolors".
+if (has("termguicolors") && &term =~ '^tmux')
+  " This is only necessary if you use set termguicolors.
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
@@ -279,8 +289,13 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 
+autocmd bufnewfile,bufread *.tsx set filetype=typescriptreact
+autocmd bufnewfile,bufread *.jsx set filetype=javascriptreact
+
 autocmd FileType c,lua,cpp,java,php,sh,typescript autocmd BufWritePre <buffer> %s/\s\+$//e
 autocmd FileType markdown set spell
+autocmd FileType css setl iskeyword+=-
+autocmd FileType scss setl iskeyword+=@-@
 
 xnoremap <leader>m :w ! bash -c cat<CR>
 
