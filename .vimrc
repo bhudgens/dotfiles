@@ -71,7 +71,7 @@ Plug 'vim-autoformat/vim-autoformat'
 Plug 'prettier/vim-prettier', { 'do': 'npm install --production' }
 
 " (vim-react-snippets) Snippets for react: https://github.com/mlaursen/vim-react-snippets#function-components-javascript
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'mlaursen/vim-react-snippets'
 
 call plug#end()
