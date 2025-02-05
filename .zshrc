@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+export PATH="/home/bhudgens/.local/bin:$PATH"
+
 git () {
     [ "${1}" = "push" ] && [ "$#" -lt 2 ] && echo "Don't DO IT!!!" && return
     /usr/bin/git "$@"
