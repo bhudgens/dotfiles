@@ -69,3 +69,5 @@ which kubectl > /dev/null && source <(kubectl completion zsh)
 export LPASS_DISABLE_PINENTRY=1
 
 alias luamake=/tmp/lua-language-server/3rd/luamake/luamake
+
+alias assume="source assume"
