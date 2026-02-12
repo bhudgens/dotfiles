@@ -70,4 +70,7 @@ export LPASS_DISABLE_PINENTRY=1
 
 alias luamake=/tmp/lua-language-server/3rd/luamake/luamake
 
-alias assume="source assume"
+alias assume='source assume'
+
+# opencode
+export PATH=/home/bhudgens/.opencode/bin:$PATH
