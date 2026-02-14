@@ -50,6 +50,9 @@ prompt_context() {
 #  23423423423432423 my_key
 export KEYME_KEYS_TO_LOAD="
 6828649b-46b1-4a84-88d9-adbe00ca8ce1 id_rsa
+d9aaf5f5-38f6-453f-af7f-b3f100d79beb netbird-virginia-key
+0c915de4-2cee-40a2-bf3b-b3f100d7a3de netbird-exit-east-key
+bf080775-98de-4667-9922-b3f100d7aa89 netbird-exit-west-key
 "
 export LASTPASS_USER="benjamin@benjamindavid.com"
 
