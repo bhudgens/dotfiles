@@ -45,7 +45,7 @@ prompt_context() {
 
 # Which keys you want to load when you run 'keyme'
 # Syntax:
-#  $last_pass_id<space>$friendly_name_on_your_disk
+#  $bitwarden_id<space>$friendly_name_on_your_disk
 # Example:
 #  23423423423432423 my_key
 export KEYME_KEYS_TO_LOAD="
@@ -53,6 +53,7 @@ export KEYME_KEYS_TO_LOAD="
 d9aaf5f5-38f6-453f-af7f-b3f100d79beb netbird-virginia-key
 0c915de4-2cee-40a2-bf3b-b3f100d7a3de netbird-exit-east-key
 bf080775-98de-4667-9922-b3f100d7aa89 netbird-exit-west-key
+159a7ff9-71d4-4549-9643-b3f100bc90d9 openclaw
 "
 export LASTPASS_USER="benjamin@benjamindavid.com"
 
