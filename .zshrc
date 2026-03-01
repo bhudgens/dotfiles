@@ -55,6 +55,11 @@ d9aaf5f5-38f6-453f-af7f-b3f100d79beb netbird-virginia-key
 0c915de4-2cee-40a2-bf3b-b3f100d7a3de netbird-exit-east-key
 bf080775-98de-4667-9922-b3f100d7aa89 netbird-exit-west-key
 159a7ff9-71d4-4549-9643-b3f100bc90d9 openclaw
+43e3530b-1d28-4288-bd7f-b4000006e04e agent1_id_ed25519
+c2b2853d-df9b-4ed3-bb95-b4000006ec53 agent2_id_ed25519
+ca2268e6-5298-46a3-a757-b4000006f7ed agent3_id_ed25519
+1850e8ea-1270-4429-9b22-b40000070343 agent4_id_ed25519
+18aac40d-c093-4253-a49a-b40000070e72 agent5_id_ed25519
 "
 export LASTPASS_USER="benjamin@benjamindavid.com"
 
