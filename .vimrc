@@ -265,11 +265,16 @@ endif
 
 set mouse+=a
 
-if (has("termguicolors") && &term =~ '^tmux')
-  " This is only necessary if you use set termguicolors.
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
+if has("termguicolors") && &term =~ '^tmux'
+  " Windows Terminal palette is often more vibrant with 256 colors in tmux.
+  " Opt in to truecolor per session with: export VIM_TMUX_TRUECOLOR=1
+  if exists("$VIM_TMUX_TRUECOLOR") && $VIM_TMUX_TRUECOLOR ==# "1"
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    set termguicolors
+  else
+    set notermguicolors
+  endif
 endif
 
 let g:onedark_color_overrides = {
@@ -298,4 +303,3 @@ autocmd FileType css setl iskeyword+=-
 autocmd FileType scss setl iskeyword+=@-@
 
 xnoremap <leader>m :w ! bash -c cat<CR>
-
