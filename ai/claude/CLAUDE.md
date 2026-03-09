@@ -1,7 +1,8 @@
-<!-- MANAGED FILE — DO NOT EDIT DIRECTLY -->
+<!-- MANAGED FILE — DO NOT EDIT ~/.claude/CLAUDE.md DIRECTLY -->
 <!-- Source of truth: ~/reverts/dotfiles/ai/claude/CLAUDE.md -->
-<!-- This file is symlinked to ~/.claude/CLAUDE.md via benvironment aitools module -->
-<!-- To persist changes: edit this file and commit+push from ~/reverts/dotfiles -->
+<!-- Copied to ~/.claude/CLAUDE.md on every shell load by benvironment aitools -->
+<!-- Local edits are overwritten on next shell load -->
+<!-- To persist changes: edit ~/reverts/dotfiles/ai/claude/CLAUDE.md and commit+push -->
 
 ## Parallelism
 - **Always parallelize independent work.** Before making tool calls, analyze the dependency graph. If two actions don't depend on each other's results, execute them in the same parallel batch. This applies to everything — tool calls, file reads, git commands, file edits, agent spawns. Never serialize independent operations.
