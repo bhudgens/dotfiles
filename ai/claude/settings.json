@@ -1,0 +1,31 @@
+{
+  "env": {},
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "allow": [
+      "Bash",
+      "Read",
+      "Write",
+      "Edit",
+      "Glob",
+      "Grep",
+      "WebFetch",
+      "WebSearch",
+      "Task"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(git push --force *)"
+    ]
+  },
+  "model": "sonnet",
+  "enabledPlugins": {
+    "context7@claude-plugins-official": true
+  },
+  "autoUpdatesChannel": "latest",
+  "effortLevel": "high"
+}
