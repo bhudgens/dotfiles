@@ -1,8 +1,8 @@
 <!-- MANAGED FILE — DO NOT EDIT ~/.codex/AGENTS.md DIRECTLY -->
-<!-- Source of truth: ~/reverts/dotfiles/ai/codex/AGENTS.md -->
+<!-- Source of truth: ~/reverts/dotfiles/.codex/AGENTS.md -->
 <!-- Copied to ~/.codex/AGENTS.md on every shell load by benvironment aitools -->
 <!-- Local edits are overwritten on next shell load -->
-<!-- To persist changes: edit ~/reverts/dotfiles/ai/codex/AGENTS.md and commit+push -->
+<!-- To persist changes: edit ~/reverts/dotfiles/.codex/AGENTS.md and commit+push -->
 
 # Global Codex Defaults
 

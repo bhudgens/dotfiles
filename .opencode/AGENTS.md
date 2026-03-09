@@ -1,8 +1,8 @@
 <!-- MANAGED FILE — DO NOT EDIT ~/.opencode/AGENTS.md DIRECTLY -->
-<!-- Source of truth: ~/reverts/dotfiles/ai/opencode/AGENTS.md -->
+<!-- Source of truth: ~/reverts/dotfiles/.opencode/AGENTS.md -->
 <!-- Copied to ~/.opencode/AGENTS.md on every shell load by benvironment aitools -->
 <!-- Local edits are overwritten on next shell load -->
-<!-- To persist changes: edit ~/reverts/dotfiles/ai/opencode/AGENTS.md and commit+push -->
+<!-- To persist changes: edit ~/reverts/dotfiles/.opencode/AGENTS.md and commit+push -->
 
 # Global OpenCode Defaults
 
