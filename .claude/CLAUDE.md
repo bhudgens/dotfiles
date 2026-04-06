@@ -45,3 +45,4 @@ For any non-trivial task, use the `Agent` tool to spawn subagents. Parallelize i
 
 ## User Environment
 - Running **Kubuntu** (KDE-flavored Ubuntu) as desktop Linux distribution
+- GitHub SSH key: `~/.ssh/id_rsa`
