@@ -42,3 +42,6 @@ For any non-trivial task, use the `Agent` tool to spawn subagents. Parallelize i
 
 ### TDD
 - For code tasks: write tests first, then implement (parallel subagents where possible), then quality check (Opus).
+
+## User Environment
+- Running **Kubuntu** (KDE-flavored Ubuntu) as desktop Linux distribution
